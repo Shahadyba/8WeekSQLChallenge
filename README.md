@@ -1,1 +1,24 @@
 # 8WeekSQLChallenge
+This repository contains solutions to the SQL challenges from the 8 Week SQL Challenge hosted on the Data With Danny website. 
+The challenges aim to enhance SQL skills through practical case studies covering various domains such as marketing analytics, health analytics, financial markets, and more.
+
+## Case Studies
+| Case Study               | Status       |
+|--------------------------|--------------|
+| Danny’s Diner            | Completed    |
+| Pizza Runner             | In Progress  |
+| Foodie-Fi                | Not Started  |
+| Data Bank                | Not Started  |
+| Data Mart                | Not Started  |
+| Clique Bait              | Not Started  |
+| Balanced Tree Clothing Co.| Not Started |
+| Fresh Segments           | Not Started  |
+
+## Folder Structure
+Each folder represents a case study with three files:
+- `solutions.sql`: SQL script with solutions for the corresponding case study.
+- `data_import.sql`: SQL script for importing data for the case study.
+- `notes.md`: Additional notes and insights related to the case study.
+
+## Usage
+To view the solutions and data import scripts for a specific case study, navigate to the respective folder and access the corresponding files. These scripts are designed for use in SQL Server Management Studio (SSMS) for executing queries and importing data.
