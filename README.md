@@ -1,5 +1,5 @@
 # 8WeekSQLChallenge
-This repository contains solutions to the SQL challenges from the 8 Week SQL Challenge hosted on the Data With Danny website. 
+This repository contains solutions to the SQL challenges from the 8 Week SQL Challenge hosted on the [Data With Danny](https://8weeksqlchallenge.com/getting-started/). 
 The challenges aim to enhance SQL skills through practical case studies covering various domains such as marketing analytics, health analytics, financial markets, and more.
 
 ## Case Studies
@@ -16,8 +16,7 @@ The challenges aim to enhance SQL skills through practical case studies covering
 
 ## Folder Structure
 Each folder represents a case study with three files:
-- `solutions.sql`: SQL script with solutions for the corresponding case study.
-- `data_import.sql`: SQL script for importing data for the case study.
+- `case_study_1.md`: explanations and queries for the corresponding case study.
 - `notes.md`: Additional notes and insights related to the case study.
 
 ## Usage
