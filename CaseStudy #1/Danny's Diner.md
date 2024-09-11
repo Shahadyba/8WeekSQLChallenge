@@ -15,13 +15,12 @@ Topics Covered:
 
 Key Datasets:
 
-- sales
+- sales 
 - menu
 - members
 
-![                                                            **Danny's Diner** Entity Diagram](Dannys_Diner.png)
+![image.png](images/"DannyDiner.png")
 
-                                     Danny's Diner Entity Diagram
 
 ## **Case Study Questions———————————————————**
 
@@ -312,7 +311,7 @@ The following questions are related creating basic data tables that can be can u
 
 Recreate the following table output using the available data:
 
-![image.png](image.png)
+![image.png](images/image.png)
 
 ```sql
 SELECT s.customer_id
@@ -333,7 +332,7 @@ FROM menu n
 
 Recreate the following table output using the available data and include information about the ranking of member’s products only:
 
-![image.png](image%201.png)
+![image.png](images/image%201.png)
 
 ```sql
 WITH ranking AS
