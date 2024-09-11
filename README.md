@@ -1,18 +1,19 @@
 # 8WeekSQLChallenge
 This repository contains solutions to the SQL challenges from the 8 Week SQL Challenge hosted on the [Data With Danny](https://8weeksqlchallenge.com/getting-started/). 
 The challenges aim to enhance SQL skills through practical case studies covering various domains such as marketing analytics, health analytics, financial markets, and more.
-
+ 
 ## Case Studies
-| Case Study               | Status       |
-|--------------------------|--------------|
-| Danny’s Diner            | Completed    |
-| Pizza Runner             | In Progress  |
-| Foodie-Fi                | Not Started  |
-| Data Bank                | Not Started  |
-| Data Mart                | Not Started  |
-| Clique Bait              | Not Started  |
-| Balanced Tree Clothing Co.| Not Started |
-| Fresh Segments           | Not Started  |
+
+| Date            | Case Study                                        | Status     |
+|-----------------|---------------------------------------------------|------------|
+| 2024-09-11      | [Danny's Diner](CaseStudy%20%231/Danny's%20Diner.md) | ~~Completed~~  |
+|                 | Pizza Runner                                      | In Progress|
+|                 | Foodie-Fi                                         | Not Started|
+|                 | Data Bank                                         | Not Started|
+|                 | Data Mart                                         | Not Started|
+|                 | Clique Bait                                       | Not Started|
+|                 | Balanced Tree Clothing Co.                        | Not Started|
+|                 | Fresh Segments                                    | Not Started|
 
 ## Folder Structure
 Each folder represents a case study with three files:
