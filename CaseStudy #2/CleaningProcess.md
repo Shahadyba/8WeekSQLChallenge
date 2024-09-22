@@ -1,5 +1,3 @@
-# Case Study#2
-
 # Data Cleaning Process
 
 There are two tables, `customer_orders` and `runner_orders`, that require cleaning. I will investigate each table and implement the necessary changes where needed. 
@@ -35,7 +33,7 @@ WHERE (order_id = 9 AND extras LIKE '%,%')
 
 For future considerations, I recommend implementing a different data entry process where each pizza is represented by its own row, even if multiple pizzas share the same pizza_id and order_id.
 
-1. The second issue is inconsistency within the dataset. Various representations of `NULL` exist, including 'null', ' ', and 'NaN'. Standardizing these to a single value, `NULL` is necessary for consistency.
+2. The second issue is inconsistency within the dataset. Various representations of `NULL` exist, including 'null', ' ', and 'NaN'. Standardizing these to a single value, `NULL` is necessary for consistency.
 
 ```sql
 UPDATE customer_orders
@@ -65,7 +63,7 @@ SET duration_min = SUBSTRING(duration_min, 1,2)
 WHERE duration_min LIKE '%m%';
 ```
 
-1. Verified the data types and made necessary corrections.
+2. Verified the data types and made necessary corrections.
 
 ```sql
 SELECT 
