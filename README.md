@@ -7,7 +7,7 @@ The challenges aim to enhance SQL skills through practical case studies covering
 | Date            | Case Study                                        | Status     |
 |-----------------|---------------------------------------------------|------------|
 | 2024-09-11      | [Danny's Diner](CaseStudy%20%231/Danny's%20Diner.md) | ~~Completed~~  |
-|                 | Pizza Runner                                      | In Progress|
+|                 | Pizza Runner                                      | ~~Completed~~  |
 |                 | Foodie-Fi                                         | Not Started|
 |                 | Data Bank                                         | Not Started|
 |                 | Data Mart                                         | Not Started|
@@ -17,8 +17,7 @@ The challenges aim to enhance SQL skills through practical case studies covering
 
 ## Folder Structure
 Each folder represents a case study with three files:
-- `case_study_1.md`: explanations and queries for the corresponding case study.
-- `notes.md`: Additional notes and insights related to the case study.
-
+- `case_study_#.md`: explanations and queries for the corresponding case study.
+- `case_study_##.sql`: Contains the solution provided as a SQL script.
 ## Usage
 To view the solutions and data import scripts for a specific case study, navigate to the respective folder and access the corresponding files. These scripts are designed for use in SQL Server Management Studio (SSMS) for executing queries and importing data.
