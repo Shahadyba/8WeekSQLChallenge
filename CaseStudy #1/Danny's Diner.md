@@ -19,7 +19,7 @@ Key Datasets:
 - menu
 - members
 
-![image](images/../DannyDiner.png)
+![image](8WeekSQLChallenge/images/DannyDiner.png)
 
 
 ## **Case Study Questions———————————————————**
