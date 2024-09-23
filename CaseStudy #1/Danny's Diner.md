@@ -19,7 +19,7 @@ Key Datasets:
 - menu
 - members
 
-![image](8WeekSQLChallenge/images/DannyDiner.png)
+![image](../images/Danny%27s%20Diner.png)
 
 
 ## **Case Study Questions———————————————————**
@@ -311,7 +311,7 @@ The following questions are related creating basic data tables that can be can u
 
 Recreate the following table output using the available data:
 
-![image.png](images/image.png)
+![image.png](../images/image%202.png)
 
 ```sql
 SELECT s.customer_id
