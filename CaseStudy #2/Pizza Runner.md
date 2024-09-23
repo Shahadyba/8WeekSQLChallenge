@@ -1,6 +1,6 @@
 # Pizza Runner
 
-##**Problem Task——————————————————————**
+## **Problem Task——————————————————————**
 
 Danny, inspired by a post about the future of pizza and 80s retro styling on Instagram, launched Pizza Runner to revolutionize pizza delivery. He recruited runners to deliver pizza from his house and developed a mobile app to accept customer orders, aiming to expand his Pizza Empire and secure seed funding.
 
@@ -39,7 +39,8 @@ SELECT COUNT(*) AS total_ordered_pizza FROM customer_orders;
 | total_ordered_pizza |
 | --- |
 | 16 |
-1. How many unique customer orders were made?
+
+2. How many unique customer orders were made?
 
 ```sql
 SELECT COUNT(*) AS unique_order
@@ -57,7 +58,8 @@ FROM (
 | unique_order |
 | --- |
 | 15  |
-1. How many successful orders were delivered by each runner?
+
+3. How many successful orders were delivered by each runner?
 
 ```sql
 SELECT runner_id
@@ -72,7 +74,8 @@ GROUP BY runner_id;
 | 1 | 4 |
 | 2 | 3 |
 | 3 | 1 |
-1. How many of each type of pizza was delivered?
+
+4. How many of each type of pizza was delivered?
 
 ```sql
 SELECT pizza_id, COUNT(*) AS number_of_orders
@@ -86,7 +89,8 @@ GROUP BY pizza_id;
 | --- | --- |
 | 1 | 10 |
 | 2 | 3 |
-1. How many Vegetarian and Meatlovers were ordered by each customer?
+
+5. How many Vegetarian and Meatlovers were ordered by each customer?
 
 ```sql
 SELECT customer_id,pizza_name
@@ -106,7 +110,8 @@ GROUP BY pizza_name,customer_id;
 | 103 | Vegetarian | 1 |
 | 104 | Meatlovers | 4 |
 | 105 | Vegetarian | 1 |
-1. What was the maximum number of pizzas delivered in a single order?
+
+6. What was the maximum number of pizzas delivered in a single order?
 
 ```sql
 SELECT MAX(number_of_pizza) AS max_pizza_number
@@ -125,7 +130,7 @@ FROM (
 | --- |
 | 3 |
 
-1. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
+7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 
 ```sql
 SELECT c.customer_id
@@ -144,7 +149,8 @@ GROUP BY c.customer_id;
 | 103 | 3 |
 | 104 | 3 |
 | 105 | 1 |
-1. How many pizzas were delivered that had both exclusions and extras?
+
+8. How many pizzas were delivered that had both exclusions and extras?
 
 ```sql
 SELECT c.customer_id
@@ -160,7 +166,8 @@ GROUP BY c.customer_id;
 | customer_id | number_of_pizza |
 | --- | --- |
 | 104 | 2 |
-1. What was the total volume of pizzas ordered for each hour of the day?
+
+9. What was the total volume of pizzas ordered for each hour of the day?
 
 ```sql
 SELECT DATEPART(HOUR, pickup_time) AS hour
@@ -177,7 +184,8 @@ GROUP BY DATEPART(HOUR, pickup_time);
 | 18 | 2 |
 | 19 | 1 |
 | 21 | 2 |
-1. What was the volume of orders for each day of the week?
+
+10. What was the volume of orders for each day of the week?
 
 ```sql
 SELECT DATENAME(WEEKDAY, order_time) AS day_name
@@ -210,7 +218,8 @@ GROUP BY DATEPART(WEEK, registration_date);
 | 1 | 1 |
 | 2 | 2 |
 | 3 | 1 |
-1. What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
+
+2. What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
 
 ```sql
 SELECT c.order_id
@@ -233,7 +242,8 @@ GROUP BY runner_id
 | 7 | 2 | 10 |
 | 8 | 2 | 21 |
 | 10 | 1 | 16 |
-1. Is there any relationship between the number of pizzas and how long the order takes to prepare?
+
+3. Is there any relationship between the number of pizzas and how long the order takes to prepare?
 
 ```sql
 SELECT c.order_id
@@ -260,7 +270,8 @@ FROM runner_orders r
 | 7 | 1 | 25 |
 | 8 | 1 | 15 |
 | 10 | 3 | 10 |
-1. What was the average distance travelled for each customer?
+
+4. What was the average distance travelled for each customer?
 
 ```sql
 SELECT c.customer_id
@@ -277,7 +288,8 @@ GROUP BY c.customer_id;
 | 103 | 23.4 |
 | 104 | 10 |
 | 105 | 25 |
-1. What was the difference between the longest and shortest delivery times for all orders?
+
+5. What was the difference between the longest and shortest delivery times for all orders?
 
 ```sql
 SELECT MAX(duration_min) - MIN(duration_min) AS difference
@@ -287,7 +299,8 @@ FROM runner_orders;
 | difference |
 | --- |
 | 30 |
-1. What was the average speed for each runner for each delivery and do you notice any trend for these values?
+
+6. What was the average speed for each runner for each delivery and do you notice any trend for these values?
 
 ```sql
 SELECT runner_id
@@ -301,7 +314,8 @@ GROUP BY runner_id;
 | 1 | 0.76 |
 | 2 | 1.05 |
 | 3 | 0.67 |
-1. What is the successful delivery percentage for each runner?
+
+7. What is the successful delivery percentage for each runner?
 
 ```sql
 SELECT runner_id
@@ -336,7 +350,7 @@ GROUP BY pr.pizza_id;
 | --- | --- |
 | 1 | Bacon, BBQ Sauce, Beef, Cheese, Chicken, Mushrooms, Pepperoni, Salami |
 | 2 | Cheese, Mushrooms, Onions, Peppers, Tomatoes, Tomato Sauce |
-1. What was the most commonly added extra?
+2. What was the most commonly added extra?
 
 ```sql
 SELECT TOP 1 topping_name
@@ -351,7 +365,8 @@ ORDER BY COUNT(extras) DESC;
 | topping_name | times |
 | --- | --- |
 | Bacon | 4 |
-1. What was the most common exclusion?
+
+3. What was the most common exclusion?
 
 ```sql
 SELECT TOP 1 topping_name
@@ -366,7 +381,8 @@ ORDER BY COUNT(exclusions) DESC;
 | topping_name | times |
 | --- | --- |
 | Cheese | 4 |
-1. Generate an order item for each record in the `customers_orders` table in the format of one of the following:
+
+4. Generate an order item for each record in the `customers_orders` table in the format of one of the following:
     - `Meat Lovers`
     - `Meat Lovers - Exclude Beef`
     - `Meat Lovers - Extra Bacon`
@@ -387,7 +403,6 @@ ORDER BY COUNT(exclusions) DESC;
       LEFT JOIN pizza_names p ON co.pizza_id = p.pizza_id
     ```
     
-
 | order_id | order_item |
 | --- | --- |
 | 1 | Meatlovers |
@@ -426,7 +441,8 @@ FROM customer_orders c
 | total |
 | --- |
 | 40 |
-1. What if there was an additional $1 charge for any pizza extras?
+
+2. What if there was an additional $1 charge for any pizza extras?
 
 ```sql
   SELECT SUM(
