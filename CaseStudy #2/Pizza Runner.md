@@ -26,7 +26,7 @@ Key Datasets:
 - pizza_recipes
 - pizza_toppings
 
-![Pizza Runner.png](Pizza_Runner.png)
+![Pizza Runner.png](../images/Pizza%20Runner.png)
 
 ### **A. Pizza Metrics**
 
