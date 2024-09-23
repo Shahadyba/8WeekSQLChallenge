@@ -7,8 +7,8 @@ The challenges aim to enhance SQL skills through practical case studies covering
 | Date            | Case Study                                        | Status     |
 |-----------------|---------------------------------------------------|------------|
 | 2024-09-11      | [Danny's Diner](CaseStudy%20%231/Danny's%20Diner.md) | ~~Completed~~  |
-|                 | Pizza Runner                                      | ~~Completed~~  |
-|                 | Foodie-Fi                                         | Not Started|
+|  2024-09-18               | [Pizza Runner](CaseStudy%20%232/Pizza%20Runner.md)                                      | ~~Completed~~  |
+|                 | Foodie-Fi                                         | in Progress|
 |                 | Data Bank                                         | Not Started|
 |                 | Data Mart                                         | Not Started|
 |                 | Clique Bait                                       | Not Started|
